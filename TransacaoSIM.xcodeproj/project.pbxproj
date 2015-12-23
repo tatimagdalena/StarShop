@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16FCE7411C2320680032430A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7401C2320680032430A /* main.m */; };
+		16FCE7441C2320680032430A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7431C2320680032430A /* AppDelegate.m */; };
+		16FCE7471C2320680032430A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7461C2320680032430A /* LoginViewController.m */; };
+		16FCE74A1C2320680032430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FCE7481C2320680032430A /* Main.storyboard */; };
+		16FCE74C1C2320680032430A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FCE74B1C2320680032430A /* Assets.xcassets */; };
+		16FCE74F1C2320680032430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FCE74D1C2320680032430A /* LaunchScreen.storyboard */; };
+		16FCE75A1C2320680032430A /* TransacaoSIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7591C2320680032430A /* TransacaoSIMTests.m */; };
+		16FCE7651C2320680032430A /* TransacaoSIMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7641C2320680032430A /* TransacaoSIMUITests.m */; };
+		16FCE7761C2320D90032430A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7731C2320D90032430A /* Bolts.framework */; };
+		16FCE7771C2320D90032430A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7741C2320D90032430A /* Parse.framework */; };
+		16FCE7781C2320D90032430A /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7751C2320D90032430A /* ParseUI.framework */; };
+		16FCE77A1C2321470032430A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7791C2321470032430A /* AudioToolbox.framework */; };
+		16FCE77C1C23214E0032430A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE77B1C23214E0032430A /* CFNetwork.framework */; };
+		16FCE77E1C2321530032430A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE77D1C2321530032430A /* CoreGraphics.framework */; };
+		16FCE7821C2321600032430A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7811C2321600032430A /* QuartzCore.framework */; };
+		16FCE7841C2321670032430A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7831C2321670032430A /* Security.framework */; };
+		16FCE7861C23216D0032430A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7851C23216D0032430A /* StoreKit.framework */; };
+		16FCE7881C2321760032430A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7871C2321760032430A /* SystemConfiguration.framework */; };
+		16FCE78A1C23217F0032430A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE7891C23217F0032430A /* libz.tbd */; };
+		16FCE78C1C2321860032430A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FCE78B1C2321860032430A /* libsqlite3.tbd */; };
+		16FCE7901C23363C0032430A /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE78F1C23363C0032430A /* SignupViewController.m */; };
+		16FCE7961C236F450032430A /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7951C236F450032430A /* ShopViewController.m */; };
+		16FCE7991C236FDE0032430A /* ShopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7981C236FDE0032430A /* ShopCollectionViewCell.m */; };
+		16FCE79C1C249D430032430A /* PaymentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE79B1C249D430032430A /* PaymentTableViewController.m */; };
+		16FCE79F1C2594D80032430A /* PaymentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE79E1C2594D80032430A /* PaymentTableViewCell.m */; };
+		16FCE7A11C2601F90032430A /* IQKeyBoardManager in Resources */ = {isa = PBXBuildFile; fileRef = 16FCE7A01C2601F80032430A /* IQKeyBoardManager */; };
+		16FCE7A51C29E6940032430A /* Transactions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16FCE7A41C29E6940032430A /* Transactions.plist */; };
+		16FCE7A81C29EEF50032430A /* TransactionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7A71C29EEF50032430A /* TransactionsTableViewController.m */; };
+		16FCE7AB1C29EF350032430A /* TransactionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FCE7AA1C29EF350032430A /* TransactionsTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16FCE7561C2320680032430A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16FCE7341C2320680032430A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FCE73B1C2320680032430A;
+			remoteInfo = TransacaoSIM;
+		};
+		16FCE7611C2320680032430A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16FCE7341C2320680032430A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FCE73B1C2320680032430A;
+			remoteInfo = TransacaoSIM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16FCE73C1C2320680032430A /* TransacaoSIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransacaoSIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FCE7401C2320680032430A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16FCE7421C2320680032430A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16FCE7431C2320680032430A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16FCE7451C2320680032430A /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		16FCE7461C2320680032430A /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		16FCE7491C2320680032430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16FCE74B1C2320680032430A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16FCE74E1C2320680032430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16FCE7501C2320680032430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FCE7551C2320680032430A /* TransacaoSIMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransacaoSIMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FCE7591C2320680032430A /* TransacaoSIMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransacaoSIMTests.m; sourceTree = "<group>"; };
+		16FCE75B1C2320680032430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FCE7601C2320680032430A /* TransacaoSIMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransacaoSIMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FCE7641C2320680032430A /* TransacaoSIMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransacaoSIMUITests.m; sourceTree = "<group>"; };
+		16FCE7661C2320680032430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FCE7731C2320D90032430A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		16FCE7741C2320D90032430A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		16FCE7751C2320D90032430A /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		16FCE7791C2321470032430A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		16FCE77B1C23214E0032430A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		16FCE77D1C2321530032430A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16FCE7811C2321600032430A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		16FCE7831C2321670032430A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		16FCE7851C23216D0032430A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		16FCE7871C2321760032430A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		16FCE7891C23217F0032430A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		16FCE78B1C2321860032430A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		16FCE78E1C23363C0032430A /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		16FCE78F1C23363C0032430A /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		16FCE7941C236F450032430A /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
+		16FCE7951C236F450032430A /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
+		16FCE7971C236FDE0032430A /* ShopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCollectionViewCell.h; sourceTree = "<group>"; };
+		16FCE7981C236FDE0032430A /* ShopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCollectionViewCell.m; sourceTree = "<group>"; };
+		16FCE79A1C249D430032430A /* PaymentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentTableViewController.h; sourceTree = "<group>"; };
+		16FCE79B1C249D430032430A /* PaymentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentTableViewController.m; sourceTree = "<group>"; };
+		16FCE79D1C2594D80032430A /* PaymentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentTableViewCell.h; sourceTree = "<group>"; };
+		16FCE79E1C2594D80032430A /* PaymentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentTableViewCell.m; sourceTree = "<group>"; };
+		16FCE7A01C2601F80032430A /* IQKeyBoardManager */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IQKeyBoardManager; sourceTree = "<group>"; };
+		16FCE7A41C29E6940032430A /* Transactions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Transactions.plist; sourceTree = "<group>"; };
+		16FCE7A61C29EEF50032430A /* TransactionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsTableViewController.h; sourceTree = "<group>"; };
+		16FCE7A71C29EEF50032430A /* TransactionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsTableViewController.m; sourceTree = "<group>"; };
+		16FCE7A91C29EF350032430A /* TransactionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsTableViewCell.h; sourceTree = "<group>"; };
+		16FCE7AA1C29EF350032430A /* TransactionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16FCE7391C2320680032430A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FCE78C1C2321860032430A /* libsqlite3.tbd in Frameworks */,
+				16FCE78A1C23217F0032430A /* libz.tbd in Frameworks */,
+				16FCE7881C2321760032430A /* SystemConfiguration.framework in Frameworks */,
+				16FCE7861C23216D0032430A /* StoreKit.framework in Frameworks */,
+				16FCE7841C2321670032430A /* Security.framework in Frameworks */,
+				16FCE7821C2321600032430A /* QuartzCore.framework in Frameworks */,
+				16FCE77E1C2321530032430A /* CoreGraphics.framework in Frameworks */,
+				16FCE77C1C23214E0032430A /* CFNetwork.framework in Frameworks */,
+				16FCE77A1C2321470032430A /* AudioToolbox.framework in Frameworks */,
+				16FCE7781C2320D90032430A /* ParseUI.framework in Frameworks */,
+				16FCE7771C2320D90032430A /* Parse.framework in Frameworks */,
+				16FCE7761C2320D90032430A /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FCE7521C2320680032430A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FCE75D1C2320680032430A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16FCE7331C2320680032430A = {
+			isa = PBXGroup;
+			children = (
+				16FCE7721C2320CB0032430A /* Frameworks */,
+				16FCE73E1C2320680032430A /* TransacaoSIM */,
+				16FCE7581C2320680032430A /* TransacaoSIMTests */,
+				16FCE7631C2320680032430A /* TransacaoSIMUITests */,
+				16FCE73D1C2320680032430A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16FCE73D1C2320680032430A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16FCE73C1C2320680032430A /* TransacaoSIM.app */,
+				16FCE7551C2320680032430A /* TransacaoSIMTests.xctest */,
+				16FCE7601C2320680032430A /* TransacaoSIMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16FCE73E1C2320680032430A /* TransacaoSIM */ = {
+			isa = PBXGroup;
+			children = (
+				16FCE7421C2320680032430A /* AppDelegate.h */,
+				16FCE7431C2320680032430A /* AppDelegate.m */,
+				16FCE7451C2320680032430A /* LoginViewController.h */,
+				16FCE7461C2320680032430A /* LoginViewController.m */,
+				16FCE78E1C23363C0032430A /* SignupViewController.h */,
+				16FCE78F1C23363C0032430A /* SignupViewController.m */,
+				16FCE7971C236FDE0032430A /* ShopCollectionViewCell.h */,
+				16FCE7981C236FDE0032430A /* ShopCollectionViewCell.m */,
+				16FCE7941C236F450032430A /* ShopViewController.h */,
+				16FCE7951C236F450032430A /* ShopViewController.m */,
+				16FCE79D1C2594D80032430A /* PaymentTableViewCell.h */,
+				16FCE79E1C2594D80032430A /* PaymentTableViewCell.m */,
+				16FCE79A1C249D430032430A /* PaymentTableViewController.h */,
+				16FCE79B1C249D430032430A /* PaymentTableViewController.m */,
+				16FCE7A61C29EEF50032430A /* TransactionsTableViewController.h */,
+				16FCE7A71C29EEF50032430A /* TransactionsTableViewController.m */,
+				16FCE7A91C29EF350032430A /* TransactionsTableViewCell.h */,
+				16FCE7AA1C29EF350032430A /* TransactionsTableViewCell.m */,
+				16FCE7481C2320680032430A /* Main.storyboard */,
+				16FCE74B1C2320680032430A /* Assets.xcassets */,
+				16FCE74D1C2320680032430A /* LaunchScreen.storyboard */,
+				16FCE7A41C29E6940032430A /* Transactions.plist */,
+				16FCE7501C2320680032430A /* Info.plist */,
+				16FCE73F1C2320680032430A /* Supporting Files */,
+			);
+			path = TransacaoSIM;
+			sourceTree = "<group>";
+		};
+		16FCE73F1C2320680032430A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16FCE7401C2320680032430A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16FCE7581C2320680032430A /* TransacaoSIMTests */ = {
+			isa = PBXGroup;
+			children = (
+				16FCE7591C2320680032430A /* TransacaoSIMTests.m */,
+				16FCE75B1C2320680032430A /* Info.plist */,
+			);
+			path = TransacaoSIMTests;
+			sourceTree = "<group>";
+		};
+		16FCE7631C2320680032430A /* TransacaoSIMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16FCE7641C2320680032430A /* TransacaoSIMUITests.m */,
+				16FCE7661C2320680032430A /* Info.plist */,
+			);
+			path = TransacaoSIMUITests;
+			sourceTree = "<group>";
+		};
+		16FCE7721C2320CB0032430A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16FCE7A01C2601F80032430A /* IQKeyBoardManager */,
+				16FCE78B1C2321860032430A /* libsqlite3.tbd */,
+				16FCE7891C23217F0032430A /* libz.tbd */,
+				16FCE7871C2321760032430A /* SystemConfiguration.framework */,
+				16FCE7851C23216D0032430A /* StoreKit.framework */,
+				16FCE7831C2321670032430A /* Security.framework */,
+				16FCE7811C2321600032430A /* QuartzCore.framework */,
+				16FCE77D1C2321530032430A /* CoreGraphics.framework */,
+				16FCE77B1C23214E0032430A /* CFNetwork.framework */,
+				16FCE7791C2321470032430A /* AudioToolbox.framework */,
+				16FCE7731C2320D90032430A /* Bolts.framework */,
+				16FCE7741C2320D90032430A /* Parse.framework */,
+				16FCE7751C2320D90032430A /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16FCE73B1C2320680032430A /* TransacaoSIM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FCE7691C2320680032430A /* Build configuration list for PBXNativeTarget "TransacaoSIM" */;
+			buildPhases = (
+				16FCE7381C2320680032430A /* Sources */,
+				16FCE7391C2320680032430A /* Frameworks */,
+				16FCE73A1C2320680032430A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransacaoSIM;
+			productName = TransacaoSIM;
+			productReference = 16FCE73C1C2320680032430A /* TransacaoSIM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16FCE7541C2320680032430A /* TransacaoSIMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FCE76C1C2320680032430A /* Build configuration list for PBXNativeTarget "TransacaoSIMTests" */;
+			buildPhases = (
+				16FCE7511C2320680032430A /* Sources */,
+				16FCE7521C2320680032430A /* Frameworks */,
+				16FCE7531C2320680032430A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16FCE7571C2320680032430A /* PBXTargetDependency */,
+			);
+			name = TransacaoSIMTests;
+			productName = TransacaoSIMTests;
+			productReference = 16FCE7551C2320680032430A /* TransacaoSIMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16FCE75F1C2320680032430A /* TransacaoSIMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FCE76F1C2320680032430A /* Build configuration list for PBXNativeTarget "TransacaoSIMUITests" */;
+			buildPhases = (
+				16FCE75C1C2320680032430A /* Sources */,
+				16FCE75D1C2320680032430A /* Frameworks */,
+				16FCE75E1C2320680032430A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16FCE7621C2320680032430A /* PBXTargetDependency */,
+			);
+			name = TransacaoSIMUITests;
+			productName = TransacaoSIMUITests;
+			productReference = 16FCE7601C2320680032430A /* TransacaoSIMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16FCE7341C2320680032430A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Tatiana Magdalena";
+				TargetAttributes = {
+					16FCE73B1C2320680032430A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					16FCE7541C2320680032430A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 16FCE73B1C2320680032430A;
+					};
+					16FCE75F1C2320680032430A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 16FCE73B1C2320680032430A;
+					};
+				};
+			};
+			buildConfigurationList = 16FCE7371C2320680032430A /* Build configuration list for PBXProject "TransacaoSIM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16FCE7331C2320680032430A;
+			productRefGroup = 16FCE73D1C2320680032430A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16FCE73B1C2320680032430A /* TransacaoSIM */,
+				16FCE7541C2320680032430A /* TransacaoSIMTests */,
+				16FCE75F1C2320680032430A /* TransacaoSIMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16FCE73A1C2320680032430A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FCE7A51C29E6940032430A /* Transactions.plist in Resources */,
+				16FCE74F1C2320680032430A /* LaunchScreen.storyboard in Resources */,
+				16FCE74C1C2320680032430A /* Assets.xcassets in Resources */,
+				16FCE74A1C2320680032430A /* Main.storyboard in Resources */,
+				16FCE7A11C2601F90032430A /* IQKeyBoardManager in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FCE7531C2320680032430A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FCE75E1C2320680032430A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16FCE7381C2320680032430A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FCE7471C2320680032430A /* LoginViewController.m in Sources */,
+				16FCE79C1C249D430032430A /* PaymentTableViewController.m in Sources */,
+				16FCE7A81C29EEF50032430A /* TransactionsTableViewController.m in Sources */,
+				16FCE79F1C2594D80032430A /* PaymentTableViewCell.m in Sources */,
+				16FCE7441C2320680032430A /* AppDelegate.m in Sources */,
+				16FCE7991C236FDE0032430A /* ShopCollectionViewCell.m in Sources */,
+				16FCE7901C23363C0032430A /* SignupViewController.m in Sources */,
+				16FCE7961C236F450032430A /* ShopViewController.m in Sources */,
+				16FCE7AB1C29EF350032430A /* TransactionsTableViewCell.m in Sources */,
+				16FCE7411C2320680032430A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FCE7511C2320680032430A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FCE75A1C2320680032430A /* TransacaoSIMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FCE75C1C2320680032430A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FCE7651C2320680032430A /* TransacaoSIMUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16FCE7571C2320680032430A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16FCE73B1C2320680032430A /* TransacaoSIM */;
+			targetProxy = 16FCE7561C2320680032430A /* PBXContainerItemProxy */;
+		};
+		16FCE7621C2320680032430A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16FCE73B1C2320680032430A /* TransacaoSIM */;
+			targetProxy = 16FCE7611C2320680032430A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16FCE7481C2320680032430A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16FCE7491C2320680032430A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16FCE74D1C2320680032430A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16FCE74E1C2320680032430A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16FCE7671C2320680032430A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16FCE7681C2320680032430A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16FCE76A1C2320680032430A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TransacaoSIM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TOM.TransacaoSIM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16FCE76B1C2320680032430A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TransacaoSIM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TOM.TransacaoSIM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		16FCE76D1C2320680032430A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TransacaoSIMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TOM.TransacaoSIMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransacaoSIM.app/TransacaoSIM";
+			};
+			name = Debug;
+		};
+		16FCE76E1C2320680032430A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TransacaoSIMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TOM.TransacaoSIMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransacaoSIM.app/TransacaoSIM";
+			};
+			name = Release;
+		};
+		16FCE7701C2320680032430A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransacaoSIMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TOM.TransacaoSIMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TransacaoSIM;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		16FCE7711C2320680032430A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TransacaoSIMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TOM.TransacaoSIMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TransacaoSIM;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16FCE7371C2320680032430A /* Build configuration list for PBXProject "TransacaoSIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FCE7671C2320680032430A /* Debug */,
+				16FCE7681C2320680032430A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16FCE7691C2320680032430A /* Build configuration list for PBXNativeTarget "TransacaoSIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FCE76A1C2320680032430A /* Debug */,
+				16FCE76B1C2320680032430A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16FCE76C1C2320680032430A /* Build configuration list for PBXNativeTarget "TransacaoSIMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FCE76D1C2320680032430A /* Debug */,
+				16FCE76E1C2320680032430A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16FCE76F1C2320680032430A /* Build configuration list for PBXNativeTarget "TransacaoSIMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FCE7701C2320680032430A /* Debug */,
+				16FCE7711C2320680032430A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16FCE7341C2320680032430A /* Project object */;
+}
