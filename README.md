@@ -1,3 +1,5 @@
+### 🚫 Este projeto não foi mais atualizado.
+
 # StarShop
 Simulação de uma loja virtual com artigos StarWars.
 
